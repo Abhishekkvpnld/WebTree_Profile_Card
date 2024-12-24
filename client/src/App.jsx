@@ -1,9 +1,14 @@
-
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
 
 
 const App = () => {
   return (
-    <div className="text-rose-500">App</div>
+    <Router>
+      <Routes>
+        <Route element={<Home />} path="/" />
+      </Routes>
+    </Router>
   )
 }
 
